@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/grade.css">
+</head>
+
+<body>
+    <div class="overlay">
+
+        <main class="main_body">
+
+            <!-- Top Section -->
+
+
+            <div class="top">
+                <div class="top_content">
+                    <div class="left">
+                        <a href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="mid">
+                        <form action="#">
+                            <input type="text" placeholder="go for a search...">
+                            <a type="button"><i class="fa fa-search"></i></a>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <a href="index.html"> <img src="./images/icon.png" alt="profile"> </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Section -->
+
+
+
+            <div class="content">
+                <div class="app_content_body">
+                    <div class="app_content">
+                        <form action="" class="form" id="form" name="num_form">
+                            <ul>
+                                <li>
+                                    <label for="num1">Starting Value</label>
+                                    <input type="number" name="num1" placeholder="enter number">
+                                </li>
+
+                                <li>
+                                    <label for="num2">Ending Value</label>
+                                    <input type="number" name="num2" placeholder="enter number">
+                                </li>
+
+
+                                <li>
+                                    <button type="button" class="button_design lg-btn" onclick="odd(+num_form.num1.value,
+                                +num_form.num2.value)">
+                                        Odd Number
+                                    </button>
+
+                                    <button type="button" class="button_design lg-btn" onclick="even(+num_form.num1.value,
+                                +num_form.num2.value)">
+                                        Even Number
+                                    </button>
+
+                                    <button type="button" class="button_design lg-btn red" onclick="allReset()">
+                                        All Clear
+                                    </button>
+                                </li>
+
+
+                                <li>
+                                    <button type="button" class="button_design" onclick="show()">
+                                        For <br> Loop
+                                    </button>
+
+                                    <button type="button" class="button_design" onclick="calcWhile(
+                                    +num_form.num1.value,
+                                    +num_form.num2.value)">
+                                        While <br> Loop
+                                    </button>
+
+                                    <button type="button" class="button_design" onclick="calcDo(
+                                    +num_form.num1.value,
+                                    +num_form.num2.value)">
+                                        Do While Loop
+                                    </button>
+
+                                    <button type="button" class="button_design" onclick="calcRecurse(
+                                    +num_form.num1.value,
+                                    +num_form.num2.value)">
+                                        Recursive Function
+                                    </button>
+                                </li>
+
+
+
+                            </ul>
+
+                        </form>
+                        <hr class="hr">
+
+                        <ul id="list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+
+            <div class="bottom">
+                <ul class="nav_links">
+                    <li>
+                        <a href="#" class="active nav_items">
+                            <i class="fas fa-home"></i>
+                            <span>home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav_items">
+                            <i class="fa fa-bell"></i>
+                            <span>notification</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_items">
+                            <i class="fa fa-cogs"></i>
+                            <span>options</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_items">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+    </div>
+
+
+    <script src="./js/custom.js"></script>
+    <!-- <script>
+
+        const show_grade = (subject , message) =>{
+            var node = document.createElement("LI"); // Create a <li> node
+            var textnode = document.createTextNode(subject+' : '+message); // Create a text node
+            node.appendChild(textnode); // Append the text to <li>
+            document.getElementById("results").appendChild(node);
+        }
+
+        function calculate_grade(subject, number) {
+
+            if (number < 0 || number > 100) {
+                show_grade(subject, 'give a number between 0 to 100.');
+
+            } else if (number >= 33 && number < 40) {
+
+                show_grade(subject, 'd'.toUpperCase());
+
+            } 
+        }
+
+        const calculate = (num1, num2) => {
+            calculate_grade('bangle',num1);
+            calculate_grade('eng',num2);
+        }
+
+        </script> -->
+</body>
+
+</html>
