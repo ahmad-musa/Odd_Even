@@ -1,3 +1,58 @@
+.top_content,
+.bottom_content {
+    background: var(--bgcolor);
+    /* border: 1px solid red; */
+    /* height: 70px; */
+    /* width: 100%; */
+    /* padding: 5px; */
+}
+
+/* Top Part Starts  */
+
+
+
+
+.top_content .left a {
+    color: var(--color2);
+}
+
+.top_content .left a:hover {
+    color: var(--white);
+}
+
+.top_content .mid input {
+    border: 2px solid rgba(82, 82, 82, 0.24);
+    color: var(--color1);
+    background: var(--color2);
+}
+
+.top_content .mid input:focus {
+    border: 2px solid var(--color2);
+    background: var(--white);
+}
+
+.top_content .mid a {
+    color: var(--color1);
+}
+
+.top_content .mid a:hover {
+    color: var(--primary1);
+}
+
+.top_content .right img {
+    border: 2px solid var(--color2);
+}
+
+.top_content .right img:hover {
+    border: 3px solid var(--white);
+}
+
+
+/* Top Part Ends  */
+
+
+
+/* Input Part Starts  */
 
 .form {
     /* background: var(--bgcolor); */
@@ -18,15 +73,18 @@
     margin: 10px 0px;
 }
 
-.form label{
-    padding: 10px 5px;
+.form ul li label {
+    padding: 10px 10px;
     width: 45%;
+    margin: 0 auto;
     color: var(--white);
+    display: flex;
+    justify-content: center;
 }
 
 
-.form ul li input {
-    border: 2px solid var(--color2);
+.form ul li .input {
+    border: 1px solid var(--color2);
     padding: 10px;
     border-radius: 8px;
     width: 70%;
@@ -36,81 +94,135 @@
     box-sizing: border-box;
 }
 
-.form ul li input:focus {
-    border: 2px solid var(--white);
-    background: #026977;
+.form ul li .input:focus {
+    border: 1px solid var(--white);
+    background: var(--gradient);
 }
 
-.button_design {
+.btn1 {
     width: 100px;
     margin: 0 3px;
-    /* margin-bottom: 5px; */
     padding: 8px 8px;
     color: var(--white);
     background: var(--color2);
-    border-radius: 15px;
-    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
     transition: all linear 0.3s;
     cursor: pointer;
     /* font-size: 13px; */
     /* font-weight: 550; */
 }
 
-.button_design:hover{
+.btn1:hover {
     background: var(--transparent);
     color: var(--color3);
-    border: 3px solid var(--color2);
-
+    border: 1px solid var(--color2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.lg-btn{
+.lg-btn {
     width: 150px;
     margin: 5px 10px;
     padding: 12px 12px;
     font-size: 16px;
     background: var(--transparent);
-    /* background: var(--white); */
-    color: var(--white);
-    border: 3px solid var(--color2);
+    border: 1px solid var(--color2);
 }
 
-.lg-btn:hover{
+.lg-btn:hover {
     color: var(--white);
     background: var(--color2);
-    border: 3px solid var(--gradient);
+
 }
 
 
-.red{
-    color: var(--white);
+.red {
     background: var(--color3);
     font-size: 20px;
     font-weight: 700;
-    border: 3px solid var(--color3);
+    border: 1px solid var(--color3);
 }
 
-.red:hover{ 
+.red:hover {
     color: var(--color3);
     background: var(--transparent);
-    border: 3px solid var(--color3);
+    border: 1px solid var(--white);
 }
+
+/* Input Part Ends  */
+
+
 
 
 /*      Result Part        */
 
 
-.hr{
-    margin-top: -10px;
+.hr {
     border-bottom: 6px solid var(--color1);
 }
 
-#list{
+
+
+
+/* Output Part Starts  */
+
+
+#list {
     padding: 5px;
     /* border: 1px solid gray; */
     margin-top: 5px;
 }
-#list li{
-    padding: 5px 10px;
-    /* border-bottom: 1px solid gray; */
+
+#list li {
+    margin: 5px;
+    padding: 8px 8px;
+    width: 40px;
+    height: 40px;
+    /* border-radius: 10px; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary1);
+    font-weight: 600;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+#list li:hover {
+    color: var(--white);
+    border: 2px solid var(--secondary1);
+    border-radius: 10px;
+    /* border-radius: 50%; */
+}
+
+
+/* Output Part Ends  */
+
+
+
+
+
+/* Bottom Part Starts */
+
+
+.bottom .nav_links li a {
     color: var(--white);
 }
+
+.bottom .nav_links li a:hover {
+    color: var(--color2);
+}
+
+.bottom .nav_links li a.active {
+    color: var(--color2);
+}
+
+.bottom .nav_links li a.active i {
+    border: 1px solid var(--color2);
+    background: var(--color2);
+    color: var(--white);
+}
+
+
+/* Bottom Part Ends */
