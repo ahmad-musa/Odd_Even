@@ -102,7 +102,7 @@ body {
 
 .top_content .mid a {
     position: absolute;
-    right: 20px;
+    right: 4%;
     top: 50%;
     transform: translateY(-50%);
     /* color: var(--color1); */

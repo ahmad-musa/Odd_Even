@@ -64,19 +64,23 @@
 }
 
 .form ul {
-    padding: 10px 10px;
+    padding: 8px 10px;
+    /* margin: 10px 0px; */
 }
 
 .form ul li {
     display: flex;
-    justify-content: space-between;
-    margin: 10px 0px;
+    justify-content: space-around;
+    /* margin: 10px 0px; */
+    padding: 5px 5px;
 }
 
 .form ul li label {
-    padding: 10px 10px;
-    width: 45%;
+    width: 5%;
     margin: 0 auto;
+    padding: 5px 5px;
+    /* margin: 0px 10px; */
+    /* width: 45%; */
     color: var(--white);
     display: flex;
     justify-content: center;
@@ -85,9 +89,10 @@
 
 .form ul li .input {
     border: 1px solid var(--color2);
-    padding: 10px;
+    padding: 5px 15px;
     border-radius: 8px;
-    width: 70%;
+    /* width: 70%; */
+    width: 74%;
     font-size: 13px;
     color: var(--white);
     background: rgba(255, 255, 255, 0.199);
@@ -102,7 +107,7 @@
 .btn1 {
     width: 100px;
     margin: 0 3px;
-    padding: 8px 8px;
+    padding: 5px 8px;
     color: var(--white);
     background: var(--color2);
     border-radius: 10px;
@@ -123,8 +128,8 @@
 
 .lg-btn {
     width: 150px;
-    margin: 5px 10px;
-    padding: 12px 12px;
+    /* margin: 5px 10px; */
+    padding: 8px 8px;
     font-size: 16px;
     background: var(--transparent);
     border: 1px solid var(--color2);
@@ -169,14 +174,14 @@
 
 
 #list {
-    padding: 5px;
+    padding: 5px 10px;
     /* border: 1px solid gray; */
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 
 #list li {
-    margin: 5px;
-    padding: 8px 8px;
+    margin: 3px;
+    /* padding: 15px; */
     width: 40px;
     height: 40px;
     /* border-radius: 10px; */

@@ -67,9 +67,7 @@ function even(number1, number2) {
     if (number1 < 0 || number2 < 0) {
         alert('All valid input is needed');
     } else {
-        if (number1 % 2 == 0) {
-            calcForEven(number1, number2);
-        }
+        calcForEven(number1, number2);
     }
 }
 
