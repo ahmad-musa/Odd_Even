@@ -306,6 +306,27 @@ body {
         padding: 5px;
     }
 
+    .top{
+        position: relative;
+    }
+    
+    .top .navbar{
+        position: absolute;
+        background-color: var(--color2);
+        width: 50%;
+        height: 31vh;
+    }
+
+    .top .navbar2{
+        width: 40%;
+        height: 23vh;
+        top: 100%;
+        right: 4%;
+    }
+
+
+
+
     .top_content {
         border-radius: 20px 20px 0 0;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
