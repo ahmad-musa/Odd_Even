@@ -74,7 +74,7 @@
 
 
 
- .navbar2{
+.top .navbar2{
     position: absolute;
     width: 50%;
     height: 25vh;
@@ -90,11 +90,11 @@
     /* padding: 5px 20px; */
 }
 
-.navbar_show2{
+.top .navbar_show2{
     right: 0;
 }
 
-.navbar2 .close2{
+.top .navbar2 .close2{
     right: 0;
     top: 0;
 }
