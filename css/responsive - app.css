@@ -1,0 +1,125 @@
+
+@media (min-width: 576px) {
+
+    body {
+        background-image: url('../images/web\ bg1.jpg');
+        background-size: cover;
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, .5);
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+    .main_body {
+        width: 575px;
+        /*  */
+        /* background: var(--glass);
+        background: var(--transparent); 
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);  */
+        height: 96vh;
+        margin: 2vh auto;
+        border-radius: 25px;
+        box-sizing: border-box;
+    }
+
+    .top,
+    .bottom {
+        /* border: 1px solid red; */
+        height: 70px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* Navbar Starts */
+    
+    .top{
+        position: relative;
+    }
+    
+    .top .navbar{
+        position: absolute;
+        width: 50%;
+        height: 32vh;
+        top: 93%;
+        left: -300%;
+        background-color: var(--color2);
+    }
+
+    .top .navbar_show{
+        left: 5px;
+    }
+
+    .top .navbar2{
+        width: 40%;
+        /* height: 23vh; */
+        height: 18vh;
+        top: 93%;
+        right: -300%;
+    }
+
+    .top .navbar_show2{
+        right: 20px;
+    }
+
+    .top .navbar2 .close2{
+        right: 5px;
+        top: 3px;
+    }
+
+    /* Navbar Ends */
+
+    .top_content {
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+    }
+
+    .content {
+        flex: 1;
+        padding: 5px 5px;
+    }
+
+    .app_content {
+        flex: 1;
+        /* background: var(--bgcolor); */
+        background: var(--glass);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #0a0909;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #270808;
+        border-radius: 25px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(92, 92, 92);
+    }
+
+
+    .bottom .bottom_content {
+        box-shadow: 0px 0px 5px #0000004d;
+        border-radius: 0 0 20px 20px;
+    }
+}
