@@ -47,7 +47,7 @@
     .top .navbar {
         position: absolute;
         width: 50%;
-        height: 36vh;
+        height: 38vh;
         top: 93%;
         left: -300%;
         background-color: var(--color2);
@@ -57,10 +57,11 @@
         left: 5px;
     }
 
+
     .top .navbar2 {
         width: 40%;
         /* height: 23vh; */
-        height: 19vh;
+        height: 21vh;
         top: 93%;
         right: -300%;
     }
