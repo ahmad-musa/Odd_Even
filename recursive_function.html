@@ -25,8 +25,8 @@
             <div class="top">
 
                 <!-- Left Most On-Clicked Menu Starts-->
-                
-                  <nav id="navbar1" class="navbar">
+
+                <nav id="navbar1" class="navbar">
                     <i id="close" class="fa fa-window-close close"></i>
                     <ul class="nav_bar">
                         <li class="nav_links"><a href="index.html">Home</a></li>
@@ -37,7 +37,7 @@
                 </nav>
 
                 <!-- Left Most On-Clicked Menu Ends-->
-                
+
                 <div class="top_content">
                     <div class="left">
                         <a href="#" id="nav_trigger">
@@ -55,19 +55,19 @@
                     </div>
                 </div>
 
-                                <!-- Right Most On-Clicked Menu Starts -->
-                                
-                                <nav id="navbar2" class="navbar2">
-                                    <i id="close2" class="fa fa-window-close close close2"></i>
-                                    <ul class="nav_bar">
-                                        <li class="nav_links"><a href="index.html">Home</a></li>
-                                        <li class="nav_links"><a href="#">Profile</a></li>
-                                        <li class="nav_links"><a href="#">logout</a></li>
-                                    </ul>
-                                </nav>
+                <!-- Right Most On-Clicked Menu Starts -->
 
-                                <!-- Right Most On-Clicked Menu Ends -->
-                                
+                <nav id="navbar2" class="navbar2">
+                    <i id="close2" class="fa fa-window-close close close2"></i>
+                    <ul class="nav_bar">
+                        <li class="nav_links"><a href="index.html">Home</a></li>
+                        <li class="nav_links"><a href="#">Profile</a></li>
+                        <li class="nav_links"><a href="#">logout</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Most On-Clicked Menu Ends -->
+
 
             </div>
 
@@ -84,26 +84,26 @@
 
                                 <li class="row_1">
                                     <a href="index.html">
-                                    <button type="button" class="btn1 " >
-                                        For <br> Loop
-                                    </button>
-                                </a>
+                                        <button type="button" class="btn1 ">
+                                            For <br> Loop
+                                        </button>
+                                    </a>
 
-                                <a href="while_loop.html">
-                                    <button type="button" class="btn1" >
-                                        While <br> Loop
-                                    </button>
-                                </a>
+                                    <a href="while_loop.html">
+                                        <button type="button" class="btn1">
+                                            While <br> Loop
+                                        </button>
+                                    </a>
 
-                                <a href="do_while_loop.html">
-                                    <button type="button" class="btn1">
-                                        Do While <br> Loop
-                                    </button> 
+                                    <a href="do_while_loop.html">
+                                        <button type="button" class="btn1">
+                                            Do While <br> Loop
+                                        </button>
                                     </a>
 
                                     <a href="recursive_function.html">
-                                    <button type="button" class="btn1 active">                                 Recursive Function
-                                    </button>
+                                        <button type="button" class="btn1 active"> Recursive Function
+                                        </button>
                                     </a>
                                 </li>
 
@@ -134,41 +134,6 @@
                                         Clear All
                                     </button>
                                 </li>
-
-
-                                <!-- <li>
-                                    <a href="index.html">
-                                    <button type="button" class="btn1 " >
-                                        For <br> Loop
-                                    </button>
-                                </a>
-
-                                <a href="while_loop.html">
-                                    <button type="button" class="btn1"  onclick="calcWhile(
-                                    +num_form.num1.value,
-                                    +num_form.num2.value)">
-                                        While <br> Loop
-                                    </button>
-                                </a>
-
-                                <a href="do_while_loop.html">
-                                    <button type="button" class="btn1" onclick="calcDo(
-                                    +num_form.num1.value,
-                                    +num_form.num2.value)">
-                                        Do While Loop
-                                    </button> 
-                                    </a>
-
-                                    <a href="recursive_function.html">
-                                    <button type="button" class="btn1 active" onclick="calcRecurse(
-                                    +num_form.num1.value,
-                                    +num_form.num2.value)">
-                                        Recursive Function
-                                    </button>
-                                    </a>
-                                </li> -->
-
-
 
                             </ul>
 
@@ -220,24 +185,23 @@
 
 
     <script>
-
         // Show Result Function //
 
         function show(num1) {
             var node = document.createElement("li");
-            var textnode = document.createTextNode(num1);
+            var textnode = document.createTextNode(+num1);
             node.appendChild(textnode);
             document.getElementById("list").appendChild(node);
             // console.log(num1);
         }
 
 
-        // Odd/Even Condition Checking &  Recursion Checking Function //
+        // Odd/Even Condition & Recursion Checking Function //
 
 
 
         function recurOdd(number1, number2) {
-            
+
             if (number1 % 2 != 0) {
                 show(number1);
             }
@@ -248,7 +212,7 @@
         }
 
         function recurEven(number1, number2) {
-            
+
             if (number1 % 2 == 0) {
                 show(number1);
             }
@@ -284,7 +248,7 @@
     </script>
 
     <script src="./js/control.js"></script>
-    
+
 </body>
 
 </html>

@@ -90,19 +90,19 @@
                                     </a>
 
                                     <a href="while_loop.html">
-                                        <button type="button" class="btn1 active" >
+                                        <button type="button" class="btn1 active">
                                             While <br> Loop
                                         </button>
                                     </a>
 
                                     <a href="do_while_loop.html">
-                                        <button type="button" class="btn1" >
+                                        <button type="button" class="btn1">
                                             Do While <br> Loop
                                         </button>
                                     </a>
 
                                     <a href="recursive_function.html">
-                                        <button type="button" class="btn1" >
+                                        <button type="button" class="btn1">
                                             Recursive Function
                                         </button>
                                     </a>
@@ -137,44 +137,9 @@
                                     </button>
                                 </li>
 
-
-                                <!-- <li>
-                                    <a href="index.html">
-                                    <button type="button" class="btn1 " >
-                                        For <br> Loop
-                                    </button>
-                                </a>
-
-                                <a href="while_loop.html">
-                                    <button type="button" class="btn1 active"  onclick="calcWhile(
-                                    +num_form.num1.value,
-                                    +num_form.num2.value)">
-                                        While <br> Loop
-                                    </button>
-                                </a>
-
-                                <a href="do_while_loop.html">
-                                    <button type="button" class="btn1" onclick="calcDo(
-                                    +num_form.num1.value,
-                                    +num_form.num2.value)">
-                                        Do While Loop
-                                    </button> 
-                                    </a>
-
-                                    <a href="recursive_function.html">
-                                    <button type="button" class="btn1" onclick="calcRecurse(
-                                    +num_form.num1.value,
-                                    +num_form.num2.value)">
-                                        Recursive Function
-                                    </button>
-                                    </a>
-                                </li> -->
-
-
-
                             </ul>
-
                         </form>
+
                         <hr class="hr">
 
                         <ul id="list">
@@ -222,7 +187,6 @@
 
 
     <script>
-
         // Show Result Function //
 
         function show(num1) {
@@ -233,30 +197,17 @@
         }
 
 
-        // Odd/Even Condition Checking Function //
-
-
-        function ODDS(num) {
-            if (num % 2 != 0) {
-                show(num);
-            }
-
-        }
-
-        function EVENS(num) {
-            if (num % 2 == 0) {
-                show(num);
-            }
-
-        }
-
 
         // Loop Checking Function //
 
         function whileOdd(number1, number2) {
             document.getElementById("list").innerHTML = ' ';
             while (number1 <= number2) {
-                ODDS(number1);
+
+                if (number1 % 2 != 0) {
+                    show(number1);
+                }
+
                 number1++;
             }
 
@@ -265,7 +216,11 @@
         function whileEven(number1, number2) {
             document.getElementById("list").innerHTML = ' ';
             while (number1 <= number2) {
-                EVENS(number1);
+
+                if (number1 % 2 == 0) {
+                    show(number1);
+                }
+
                 number1++;
             }
 
