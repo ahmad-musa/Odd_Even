@@ -165,6 +165,7 @@
     justify-content: space-around;
     /* margin: 10px 0px; */
     padding: 5px 5px;
+    
 }
 
 .form ul li label {
@@ -197,13 +198,14 @@
 }
 
 .btn1 {
-    width: 100px;
+    width: 80px;
     margin: 0 3px;
     padding: 5px 8px;
     color: var(--white);
-    background: var(--color2);
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0);
+    /* background: var(--color2); */
+    background: var(--transparent);
+    border-radius: 5px;
+    border: 1px solid var(--color2);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
     transition: all linear 0.3s;
     cursor: pointer;
@@ -212,8 +214,9 @@
 }
 
 .btn1:hover {
-    background: var(--transparent);
-    color: var(--color3);
+    /* background: var(--transparent); */
+    background: var(--color2);
+    color: var(--black);
     border: 1px solid var(--color2);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -223,13 +226,16 @@
     /* margin: 5px 10px; */
     padding: 8px 8px;
     font-size: 16px;
-    background: var(--transparent);
+    /* background: var(--transparent); */
+    background: var(--color2);
     border: 1px solid var(--color2);
 }
 
 .lg-btn:hover {
-    color: var(--white);
-    background: var(--color2);
+    /* color: var(--white); */
+    color: var(--color2);
+    background: var(--transparent);
+    border: 1px solid var(--white);
 
 }
 
@@ -244,8 +250,22 @@
 .red:hover {
     color: var(--color3);
     background: var(--transparent);
+    border: 1px solid var(--color3);
+}
+
+.app_content .form .active{
+    color: var(--color1);
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    background-color: var(--white);
     border: 1px solid var(--white);
 }
+
+/* .app_content .form .active:hover{
+    color: var(--white);
+    background-color: var(--color1);
+    border: 1px solid var(--color2);
+} */
 
 /* Input Part Ends  */
 

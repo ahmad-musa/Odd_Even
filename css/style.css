@@ -135,6 +135,8 @@ body {
     border: 3px solid var(--white);
 } */
 
+
+
 /* Top Section Ends */
 
 
@@ -167,6 +169,10 @@ body {
     overflow-y: scroll;
     height: 100%;
     /* border-radius: 10px; */
+}
+
+.app_content .row_1{
+    margin: 5px;
 }
 
 /* width */
@@ -211,7 +217,7 @@ body {
 }
 
 .bottom .nav_links li a {
-    display: block;
+    display: inline-block;
     text-align: center;
     /* color: var(--white); */
     transition: all linear .3s;
@@ -229,7 +235,7 @@ body {
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    line-height: 20px;
+    line-height: 22.5px;
     /* border: 1px solid var(--color2);
     background: var(--color2);
     color: var(--white);  */

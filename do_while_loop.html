@@ -81,9 +81,10 @@
                         <form action="" class="form" id="form" name="num_form">
                             <ul>
 
+
                                 <li class="row_1">
                                     <a href="index.html">
-                                        <button type="button" class="btn1 active">
+                                        <button type="button" class="btn1 ">
                                             For <br> Loop
                                         </button>
                                     </a>
@@ -95,8 +96,8 @@
                                     </a>
 
                                     <a href="do_while_loop.html">
-                                        <button type="button" class="btn1" >
-                                            Do While <br>Loop
+                                        <button type="button" class="btn1 active" >
+                                            Do While <br> Loop
                                         </button>
                                     </a>
 
@@ -106,7 +107,6 @@
                                         </button>
                                     </a>
                                 </li>
-
 
 
                                 <li>
@@ -139,7 +139,7 @@
 
                                 <!-- <li>
                                     <a href="index.html">
-                                    <button type="button" class="btn1 active" >
+                                    <button type="button" class="btn1 " >
                                         For <br> Loop
                                     </button>
                                 </a>
@@ -153,7 +153,7 @@
                                 </a>
 
                                 <a href="do_while_loop.html">
-                                    <button type="button" class="btn1" onclick="calcDo(
+                                    <button type="button" class="btn1 active" onclick="calcDo(
                                     +num_form.num1.value,
                                     +num_form.num2.value)">
                                         Do While Loop
@@ -168,7 +168,6 @@
                                     </button>
                                     </a>
                                 </li> -->
-
 
 
 
@@ -221,6 +220,7 @@
     </div>
 
 
+
     <script>
 
         // Show Result Function //
@@ -232,36 +232,44 @@
             document.getElementById("list").appendChild(node);
         }
 
+
         // Odd/Even Condition Checking Function //
 
         function ODDS(num) {
             if (num % 2 != 0) {
                 show(num);
             }
+
         }
 
         function EVENS(num) {
             if (num % 2 == 0) {
                 show(num);
             }
+
         }
+
 
         // Loop Checking Function //
 
-        function ForOdd(number1, number2) {
+        function dowhileOdd(number1, number2) {
             document.getElementById("list").innerHTML = ' ';
-            for (number1; number1 <= number2; number1++) {
+            do {
                 ODDS(number1);
-            }
+                number1++;
+            } while (number1 <= number2)
+
         }
 
-        function ForEven(number1, number2) {
+        function dowhileEven(number1, number2) {
             document.getElementById("list").innerHTML = ' ';
-            for (number1; number1 <= number2; number1++) {
-                if (number1 % 2 == 0) {
-                    EVENS(number1);
-                }
-            }
+
+
+            do {
+                EVENS(number1);
+                number1++;
+            } while (number1 <= number2)
+
         }
 
 
@@ -273,7 +281,7 @@
             if (number1 < 0 || number2 < 0) {
                 alert('All valid input is needed');
             } else {
-                ForOdd(number1, number2);
+                dowhileOdd(number1, number2);
             }
         }
 
@@ -282,10 +290,12 @@
             if (number1 < 0 || number2 < 0) {
                 alert('All valid input is needed');
             } else {
-                ForEven(number1, number2);
+                dowhileEven(number1, number2);
             }
         }
     </script>
+
+
     <script src="./js/custom.js"></script>
 
 </body>

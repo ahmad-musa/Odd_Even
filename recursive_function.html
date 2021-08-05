@@ -25,8 +25,8 @@
             <div class="top">
 
                 <!-- Left Most On-Clicked Menu Starts-->
-
-                <nav id="navbar1" class="navbar">
+                
+                  <nav id="navbar1" class="navbar">
                     <i id="close" class="fa fa-window-close close"></i>
                     <ul class="nav_bar">
                         <li class="nav_links"><a href="index.html">Home</a></li>
@@ -37,7 +37,7 @@
                 </nav>
 
                 <!-- Left Most On-Clicked Menu Ends-->
-
+                
                 <div class="top_content">
                     <div class="left">
                         <a href="#" id="nav_trigger">
@@ -55,19 +55,19 @@
                     </div>
                 </div>
 
-                <!-- Right Most On-Clicked Menu Starts -->
+                                <!-- Right Most On-Clicked Menu Starts -->
+                                
+                                <nav id="navbar2" class="navbar2">
+                                    <i id="close2" class="fa fa-window-close close close2"></i>
+                                    <ul class="nav_bar">
+                                        <li class="nav_links"><a href="index.html">Home</a></li>
+                                        <li class="nav_links"><a href="#">Profile</a></li>
+                                        <li class="nav_links"><a href="#">logout</a></li>
+                                    </ul>
+                                </nav>
 
-                <nav id="navbar2" class="navbar2">
-                    <i id="close2" class="fa fa-window-close close close2"></i>
-                    <ul class="nav_bar">
-                        <li class="nav_links"><a href="index.html">Home</a></li>
-                        <li class="nav_links"><a href="#">Profile</a></li>
-                        <li class="nav_links"><a href="#">logout</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Right Most On-Clicked Menu Ends -->
-
+                                <!-- Right Most On-Clicked Menu Ends -->
+                                
 
             </div>
 
@@ -81,32 +81,31 @@
                         <form action="" class="form" id="form" name="num_form">
                             <ul>
 
+
                                 <li class="row_1">
                                     <a href="index.html">
-                                        <button type="button" class="btn1 active">
-                                            For <br> Loop
-                                        </button>
-                                    </a>
+                                    <button type="button" class="btn1 " >
+                                        For <br> Loop
+                                    </button>
+                                </a>
 
-                                    <a href="while_loop.html">
-                                        <button type="button" class="btn1" >
-                                            While <br> Loop
-                                        </button>
-                                    </a>
+                                <a href="while_loop.html">
+                                    <button type="button" class="btn1" >
+                                        While <br> Loop
+                                    </button>
+                                </a>
 
-                                    <a href="do_while_loop.html">
-                                        <button type="button" class="btn1" >
-                                            Do While <br>Loop
-                                        </button>
+                                <a href="do_while_loop.html">
+                                    <button type="button" class="btn1">
+                                        Do While <br> Loop
+                                    </button> 
                                     </a>
 
                                     <a href="recursive_function.html">
-                                        <button type="button" class="btn1" >
-                                            Recursive Function
-                                        </button>
+                                    <button type="button" class="btn1 active">                                 Recursive Function
+                                    </button>
                                     </a>
                                 </li>
-
 
 
                                 <li>
@@ -139,7 +138,7 @@
 
                                 <!-- <li>
                                     <a href="index.html">
-                                    <button type="button" class="btn1 active" >
+                                    <button type="button" class="btn1 " >
                                         For <br> Loop
                                     </button>
                                 </a>
@@ -161,14 +160,13 @@
                                     </a>
 
                                     <a href="recursive_function.html">
-                                    <button type="button" class="btn1" onclick="calcRecurse(
+                                    <button type="button" class="btn1 active" onclick="calcRecurse(
                                     +num_form.num1.value,
                                     +num_form.num2.value)">
                                         Recursive Function
                                     </button>
                                     </a>
                                 </li> -->
-
 
 
 
@@ -248,19 +246,19 @@
 
         // Loop Checking Function //
 
-        function ForOdd(number1, number2) {
+        function recurOdd(number1, number2) {
             document.getElementById("list").innerHTML = ' ';
-            for (number1; number1 <= number2; number1++) {
+            if (number1 <= number2) {
                 ODDS(number1);
+                return recurOdd(number1+=1, number2);
             }
         }
 
-        function ForEven(number1, number2) {
+        function recurEven(number1, number2) {
             document.getElementById("list").innerHTML = ' ';
-            for (number1; number1 <= number2; number1++) {
-                if (number1 % 2 == 0) {
-                    EVENS(number1);
-                }
+            if (number1 <= number2) {
+                EVENS(number1);
+                return recurEven(number1+=1, number2);
             }
         }
 
@@ -273,7 +271,7 @@
             if (number1 < 0 || number2 < 0) {
                 alert('All valid input is needed');
             } else {
-                ForOdd(number1, number2);
+                recurOdd(number1, number2);
             }
         }
 
@@ -282,12 +280,13 @@
             if (number1 < 0 || number2 < 0) {
                 alert('All valid input is needed');
             } else {
-                ForEven(number1, number2);
+                recurEven(number1, number2);
             }
         }
     </script>
-    <script src="./js/custom.js"></script>
 
+    <script src="./js/custom.js"></script>
+    
 </body>
 
 </html>
