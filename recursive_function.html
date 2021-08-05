@@ -225,40 +225,36 @@
 
         function show(num1) {
             var node = document.createElement("li");
-            var textnode = document.createTextNode(+num1);
+            var textnode = document.createTextNode(num1);
             node.appendChild(textnode);
             document.getElementById("list").appendChild(node);
+            // console.log(num1);
         }
 
-        // Odd/Even Condition Checking Function //
 
-        function ODDS(num) {
-            if (num % 2 != 0) {
-                show(num);
-            }
-        }
+        // Odd/Even Condition Checking &  Recursion Checking Function //
 
-        function EVENS(num) {
-            if (num % 2 == 0) {
-                show(num);
-            }
-        }
 
-        // Loop Checking Function //
 
         function recurOdd(number1, number2) {
-            document.getElementById("list").innerHTML = ' ';
-            if (number1 <= number2) {
-                ODDS(number1);
-                return recurOdd(number1+=1, number2);
+            
+            if (number1 % 2 != 0) {
+                show(number1);
+            }
+
+            if (number1 < number2) {
+                recurOdd(++number1, number2);
             }
         }
 
         function recurEven(number1, number2) {
-            document.getElementById("list").innerHTML = ' ';
-            if (number1 <= number2) {
-                EVENS(number1);
-                return recurEven(number1+=1, number2);
+            
+            if (number1 % 2 == 0) {
+                show(number1);
+            }
+
+            if (number1 < number2) {
+                recurEven(++number1, number2);
             }
         }
 
@@ -269,8 +265,9 @@
         function odd(number1, number2) {
 
             if (number1 < 0 || number2 < 0) {
-                alert('All valid input is needed');
+                alert('Invalid Input');
             } else {
+                document.getElementById("list").innerHTML = ' ';
                 recurOdd(number1, number2);
             }
         }
@@ -278,14 +275,15 @@
 
         function even(number1, number2) {
             if (number1 < 0 || number2 < 0) {
-                alert('All valid input is needed');
+                alert('Invalid Input');
             } else {
+                document.getElementById("list").innerHTML = ' ';
                 recurEven(number1, number2);
             }
         }
     </script>
 
-    <script src="./js/custom.js"></script>
+    <script src="./js/control.js"></script>
     
 </body>
 
